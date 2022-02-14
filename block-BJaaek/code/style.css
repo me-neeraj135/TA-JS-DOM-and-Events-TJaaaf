@@ -88,15 +88,7 @@ h1 {
   align-items: center;
 }
 
-.first {
-  margin-right: 20px;
-}
-
 /* custom style */
-
-.first {
-  background-color: ;
-}
 .second {
-  background-color: turquoise;
+  transition: 0.3s;
 }
