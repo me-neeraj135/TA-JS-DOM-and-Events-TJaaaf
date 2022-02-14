@@ -91,3 +91,12 @@ h1 {
 .first {
   margin-right: 20px;
 }
+
+/* custom style */
+
+.first {
+  background-color: ;
+}
+.second {
+  background-color: turquoise;
+}
