@@ -33,3 +33,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* custom style */
+
+.heading {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+}
+.girdItems {
+  grid-column-start: 1;
+}
