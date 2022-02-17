@@ -36,7 +36,7 @@ img {
 
 body {
   background: #f2f4f8;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -68,7 +68,8 @@ body {
   margin: 0 auto;
 }
 
-.boxes {
+.boxes1,
+.boxes2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
