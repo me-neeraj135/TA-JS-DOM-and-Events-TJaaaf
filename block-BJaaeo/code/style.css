@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  /* background-color: rgb(245, 206, 206); */
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* custom-style */
+
+h1 {
+  font-size: 3rem;
+}
+.container {
+  /* width: auto; */
+  /* display: inline-block; */
+  /* margin: 0 auto; */
+  text-align: center;
+  /* border: 1px solid black; */
+  margin-top: 2rem;
+}
+.calculator {
+  margin-top: 3rem;
+  width: 390px;
+  /* border: 3px solid rgb(30, 190, 15); */
+  display: inline-block;
+  background-color: rgb(248 155 217);
+  border-radius: 19px;
+  /* padding: 10px; */
+  border: 10px solid purple;
+  height: 450px;
+}
+input {
+  width: 337px;
+  height: 65px;
+  margin-top: 23px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 1.5rem;
+  background-color: rgb(161 161 160);
+  color: rgb(56, 5, 66);
+}
+table {
+  margin: 0 auto;
+}
+button {
+  background-color: rgb(161 161 160);
+  width: 75px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 25px;
+  /* margin-left: 5px; */
+  margin: 5px;
+  border: none;
+  color: rgb(79, 5, 94);
+  font-size: 1.5rem;
+}
