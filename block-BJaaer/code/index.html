@@ -29,7 +29,7 @@
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <select id="gender" name="choice">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -91,6 +91,12 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div class="modal_overlay">
+        <div class="container relative">
+          <button class="modal_close">Close</button>
+          <div class="modal_info"></div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
