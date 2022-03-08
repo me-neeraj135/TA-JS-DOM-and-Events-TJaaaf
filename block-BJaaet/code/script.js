@@ -26,14 +26,16 @@ let data = [];
 let ul = document.createElement(`ul`);
 
 function creatUi(movie) {
-  movie.forEach(element => {
+  movie.forEach((element, i) => {
     let li = document.createElement(`li`);
     let checkDiv = document.createElement(`div`);
     let inputCheck = document.createElement(`input`);
     inputCheck.type = `checkBox`;
-    inputCheck.id = `#`;
+    inputCheck.id = i;
+    inputCheck.checked = element.watched;
     let small = document.createElement(`small`);
     small.innerText = element.name;
+    small.setAttribute(`data-id`, i);
     let closeBtn = document.createElement(`button`);
     closeBtn.classList.add(`btn`);
     closeBtn.innerText = `X`;
@@ -43,7 +45,10 @@ function creatUi(movie) {
     div1.append(ul);
 
     function deleteMovie(e) {
-      li.remove(``);
+      //   li.remove(``);
+      let id = e.target.dataset.id;
+      e.target.parentElement.remove();
+      console.log(e.target.parentElement);
     }
     closeBtn.addEventListener(`click`, deleteMovie);
   });
@@ -54,10 +59,12 @@ function enterMovie(e) {
     if (e.target.value !== ``) {
       let obj = {};
       obj.name = e.target.value;
+      obj.watched = false;
       //   console.log(obj.name);
       data.push(obj);
       creatUi(data);
       data.pop();
+      e.target.value = ``;
     }
   }
 }
