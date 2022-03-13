@@ -28,7 +28,9 @@ footerUl.classList.add(`footerUl`);
 
 //  store data in an array of object
 
-let allData = JSON.parse(localStorage.getItem(`todoS`)) || [];
+let allData = localStorage.getItem(`todoS`)
+  ? JSON.parse(localStorage.getItem(`todoS`))
+  : [];
 
 //item left button.....
 
@@ -143,10 +145,9 @@ function displayAll(e) {
 
 function handleActive(e) {
   allData = allData.filter(elm => elm.isDone === false);
-  localStorage.setItem(`todoS`, JSON.stringify(allData));
 
   creatUi();
-  itemLeft.innerText = `${activeTodo.length} Item Left`;
+  itemLeft.innerText = `${allData.length} Item Left`;
   console.log(allData);
 }
 
@@ -155,7 +156,6 @@ function handleActive(e) {
 function handleCompleted(event) {
   allData = allData.filter(element => element.isDone === true);
 
-  localStorage.setItem(`todoS`, JSON.stringify(allData));
   creatUi();
 
   console.log(allData);
