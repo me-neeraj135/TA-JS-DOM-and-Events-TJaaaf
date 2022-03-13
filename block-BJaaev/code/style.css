@@ -156,29 +156,30 @@ h1 {
   box-shadow: grey;
 }
 .new-todo {
-  width: 90%;
+  width: 100%;
   padding: 1rem;
   font-style: italic;
   font-size: 1.5rem;
   font-weight: 900;
   border: none;
-  outline: none;
+  /* outline: none; */
 }
 li {
   display: flex;
   padding: 1rem;
-  align-content: center;
+  align-items: center;
+  border: 1px solid black;
   /* justify-content: space-between; */
 }
 p {
   margin-left: 5%;
-  /* font-size: 2rem; */
+  margin-right: 40%;
+  font-size: 2rem;
   font-style: italic;
 }
 .close {
-  margin-left: 75%;
   font-weight: 900;
-  /* border: none; */
+  border: none;
   color: rgb(248, 10, 10);
 }
 .checkBox {
@@ -187,25 +188,33 @@ p {
   background-color: white;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(122, 113, 113);
   appearance: none;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
 }
 .checkBox:checked {
-  background-color: royalblue;
+  background-color: rgb(55, 91, 201);
 }
 .footerUl {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 0;
+  border: 1px solid black;
 }
 .lineThrough {
   text-decoration: line-through;
   font-weight: 500;
 }
-/* p {
-  text-decoration: line-through;
-} */
+.select {
+  background-color: white;
+  font-size: 1.5rem;
+  color: black;
+}
+.buttonColor {
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+}
