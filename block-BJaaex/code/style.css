@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #6589f9;
+}
+
+h1 {
+  color: white;
+}
+.btn {
+  display: none;
+}
+.reset {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 99;
+  display: block;
+}
+.game {
+  /* border: 1px solid rgb(14, 14, 12); */
+}
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+
+.card {
+  margin: 5px;
+  background-color: #6589f9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 150px;
+  width: 200px;
+  /* border: 1px solid black; */
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.back,
+.front {
+  height: 150px;
+  width: 100%;
+}
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.front {
+  background: rgb(243, 108, 74);
+  /* background-image: url(``); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+}
+.selected {
+  border: 4px solid rgb(18, 18, 19);
+}
+
+.match {
+  border: 4px solid red;
+  background-image: none !important;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: #6589f9 !important;
+}
+
+.moveCount {
+  display: inline-block;
+}
+.winnerDisplay {
+  /* display: inline-block; */
+  text-align: center;
+  font-size: 80px;
+  font-weight: 900;
+  color: white;
+
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 99;
+}
