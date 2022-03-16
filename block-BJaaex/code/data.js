@@ -1,51 +1,51 @@
 // Card data
 let cardsArray = [
   {
-    name: "shell",
-    img: "",
+    name: "apple",
+    img: "./assets/apple.jpeg",
   },
   {
-    name: "star",
-    img: "img/star.png",
+    name: "banana",
+    img: "./assets/banana.jpg",
   },
   {
-    name: "bobomb",
-    img: "img/bobomb.png",
+    name: "berry",
+    img: "./assets/berry.jpeg",
   },
   {
-    name: "mario",
-    img: "img/mario.png",
+    name: "cherry",
+    img: "./assets/cherry.jpeg",
   },
   {
-    name: "luigi",
-    img: "img/luigi.png",
+    name: "granad",
+    img: "./assets/granad.jpeg",
   },
   {
-    name: "peach",
-    img: "img/peach.png",
+    name: "grapes",
+    img: "./assets/grapes.jpg",
   },
   {
-    name: "1up",
-    img: "img/1up.png",
+    name: "guvava",
+    img: "./assets/guvava.jpg",
   },
   {
-    name: "mushroom",
-    img: "img/mushroom.png",
+    name: "mango",
+    img: "./assets/mango.jpg",
   },
   {
-    name: "thwomp",
-    img: "img/thwomp.png",
+    name: "orange",
+    img: "./assets/orange.jpg",
   },
   {
-    name: "bulletbill",
-    img: "img/bulletbill.png",
+    name: "papaya",
+    img: "./assets/papaya.jpeg",
   },
   {
-    name: "coin",
-    img: "img/coin.png",
+    name: "pineapple",
+    img: "./assets/pineapple.jpg",
   },
   {
-    name: "goomba",
-    img: "img/goomba.png",
+    name: "waterMln",
+    img: "./assets/waterMln.jpeg",
   },
 ];
